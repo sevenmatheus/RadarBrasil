@@ -9,7 +9,7 @@ import Logo from "../src/components/Logo";
 import Details from "../src/components/Details";
 import Warning from "../src/components/Warning";
 
-export default function details({query}) 
+export default function DetailsPage({query}) 
 { 
 
     const [deputy, setDeputy] = useState([])

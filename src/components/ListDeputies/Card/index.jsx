@@ -25,7 +25,7 @@ export default function Card({politico})
                 <div>
                     <button className="my-2 font-bold text-amber-400 flex items-center" onClick={() => router.push(`/details?id=${politico?.id}`)}>
                         <div className="mr-1">
-                            <span class="iconify" data-icon="carbon:view"></span>
+                            <span className="iconify" data-icon="carbon:view"></span>
                         </div> 
                         Visualizar
                     </button> 
