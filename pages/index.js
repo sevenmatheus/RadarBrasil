@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 import myAPI from "../src/modules/myAPI";
 import Layout from "../src/components/Layout";
@@ -12,7 +12,7 @@ export default function Home()
 { 
     const maxDeputies = 12
     const [currentPage, setCurrentPage] = useState(0)
-    const [deputies, setDeputies] = useState({})
+    const [deputies, setDeputies] = useState([])
 
     useEffect(function() { 
         
