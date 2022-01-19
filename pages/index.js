@@ -10,7 +10,7 @@ import Warning from "../src/components/Warning";
 
 export default function Home() 
 { 
-    const maxDeputies = 12
+    const [maxDeputies, setMaxDeputies] = useState(12)
     const [currentPage, setCurrentPage] = useState(0)
     const [deputies, setDeputies] = useState([])
 
@@ -27,7 +27,7 @@ export default function Home()
         <Layout title='Radar do Brasil - Uma ferramenta para a democracia!'>
             <Warning text={<p>Aplicação desenvolvida usando <strong>Next & React </strong></p>} />
             <Logo />
-            <ListDeputies deputiesList={deputies} maxItems={maxDeputies} currentPage={currentPage} setCurrentPage={setCurrentPage} />
+            <ListDeputies deputiesList={deputies} maxItems={maxDeputies} currentPage={currentPage} setCurrentPage={setCurrentPage} setMaxDeputies={setMaxDeputies} />
         </Layout>
     )     
 }

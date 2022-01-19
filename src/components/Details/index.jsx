@@ -60,9 +60,9 @@ export default function Details({deputy})
                         {unidadeFederativa[deputy.ultimoStatus?.siglaUf]} 
                     </p> 
                 </div>
-                <div className="flex items-center">
-                    <div className="min-h-[320px] aspect-[12/6] relative">
-                        <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-l from-white z-10"></div>
+                <div className="flex items-center flex-col lg:flex-row">
+                    <div className="w-full lg:w-auto lg:min-h-[320px] aspect-[12/6] relative">
+                        <div className="absolute left-0 top-0 w-full h-full bg-gradient-to-t lg:bg-gradient-to-l from-white z-10"></div>
                         <div className="absolute left-0 top-0 w-full h-full grayscale bg-left-top bg-no-repeat bg-cover opacity-50 z-0" style={{backgroundImage: `url('https://www.camara.leg.br/internet/deputado/bandep/pagina_do_deputado/${deputy.id}.jpg')`}}>
                         </div>
                     </div>
